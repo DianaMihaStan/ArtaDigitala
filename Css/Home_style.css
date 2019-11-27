@@ -1,0 +1,211 @@
+@font-face 
+{
+    font-family: Custom;
+    src:url("../Fonts/CustomFont.ttf");
+}
+@font-face {
+    font-family: Custom2;
+    src:url("../Fonts/CustomFont2.ttf");
+}
+:root
+{
+	--dark:#14141f;
+	--light:#fff;
+	--shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
+html
+{
+	box-sizing:border-box; /*Nu afecteza width la element*/
+	color: var(--dark);
+	
+}
+.wrapper
+{
+	display:grid;
+	grid-gap:1rem;
+	background-image:url("../Imagini/wrapper.png");
+	background-size:1150px 1100px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.text h6
+{
+	text-align:center;
+	margin-bottom:0;
+	font-size:1.5rem;
+	margin-top:0;
+}
+.text{
+	margin-top:20px;
+	display:grid;
+	font-family:Custom2;
+	background-image:url("../Imagini/whitev.png");
+	background-size:cover;
+	min-height:00px;
+	max-width:1000px;
+	justify:center;
+	padding:3rem;
+	display:flex;
+	margin-left: auto;
+    margin-right: auto;
+	align-items:start;
+	justify-content:center;
+	box-shadow:var(--shadow);
+	border-radius:25px;
+	flex-direction:column;
+}
+.mid
+{
+    margin-top:8vh;
+	display:grid;
+	grid-gap:1rem;
+	grid-template-areas:
+	'video video lista'
+	'video video bibliografie';
+}
+
+.video
+{
+  margin-top:-30px;
+  grid-area:video;
+  background-image:url("../Imagini/blacksand.png");
+  background-size:1150px 1100px;
+  border-radius: 10px;
+  padding: 20px; 
+  min-height:300px;
+  max-width:900px;
+  margin-left:175px;
+  box-shadow:var(--shadow);
+  width: 300px;
+  height:300px;  
+}
+.lista
+{   
+    font-family:Custom2;
+    grid-area:lista;
+	background-image:url("../Imagini/whitev.png");
+	background-size:cover;
+	display:grid;
+	align-items:center;
+	justify-items:center;
+	box-shadow:var(--shadow);
+	padding:1,5rem;
+	max-width:600px;
+	margin-right:10vw;
+	border-radius:20px;
+}
+.lista h3
+{
+	text-align:center;
+	margin-bottom:0;
+	font-size:1.25rem;
+	margin-top:5px;
+	margin-left:5px;
+}
+.bibliografie
+{
+	font-family:Custom2;
+	grid-area:bibliografie;
+	background-image:url("../Imagini/whitev.png");
+	background-size:cover;
+	display:grid;
+	align-items:center;
+	justify-items:center;
+	box-shadow:var(--shadow);
+	padding:1,5rem;
+	max-width:600px;
+	margin-right:10vw;
+	border-radius:20px;
+	word-wrap: break-word;
+}
+footer
+{
+	font-family: Custom;
+	background-color:var(--dark);
+	text-align:center;
+	font-size:0.75em;
+	color:var(--light);
+	max-width:1100px;
+	border-radius:25px;
+	margin-left:175px;
+}
+.hero-image 
+{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagini/triangles.png");
+  height:150px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+  margin:0;
+  margin-top:-25px;
+  width:100%;
+}
+.hero-text
+{
+	font-family:Custom;
+	text-align:center;	
+}
+@media only screen and (max-width: 700px) {
+ .hero-image 
+ {
+	 width:110%;
+ }
+ .flex-container {
+    flex-direction:column;
+	top:0;
+	right:0;
+	margin-right:0;
+  }
+.li
+{
+	margin-top:50px;
+}
+.video
+{
+	margin-left:0;
+}
+.text{
+	max-width:300px;
+	margin-left:0;
+}
+.mid
+{
+	grid-template-areas:
+	'video video'
+	'lista lista'
+	'bibliografie bibliografie';
+}
+.bibliografie
+{
+	max-width:350px;
+	box-sizing:border-box;
+	min-height:200px;
+	
+}
+footer
+{
+	margin-left:0px;
+	max-width:300px;
+}
+.wrapper
+{
+	background-size:1900px 2000px;
+}}
+@media only screen (min-width: 701px) and (max-width: 799px) 
+{
+ 
+.mid
+{
+	margin-left:0;
+}
+.text{
+	max-width:800px;
+	margin-left:0;
+}
+footer
+{
+	margin-left:0px;
+}
+
+}

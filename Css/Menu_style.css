@@ -1,0 +1,124 @@
+
+.nav-side
+{
+	position:fixed;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	max-width:250px;
+	background-color:#f1f1f1;
+	box-sizing:border-box;
+	padding:20px;
+	margin-left:-250px;
+	transition: margin 200ms ease-in-out;
+}
+.nav-side.nav-open
+{
+	margin-left:0;
+	box-shadow: 2px 3px 2px rgba(68, 68, 68, 0.6);
+}
+.nav-toggle
+{
+	position:absolute;
+	right:-40px;
+	top:0;
+	height:40px;
+	width:40px;
+	background-color:#ffffff;
+	line-height:40px;
+	text-align:center;
+	border-bottom-right-radius:3px;
+	box-shadow: 2px 3px 2px rgba(68, 68, 68, 0.6);
+
+}
+
+@keyframes animatie1
+{
+	0%
+	{
+		background-color:pink;
+	}
+	50%
+	{
+		background-color:#fff3b6;
+	}
+	100%
+	{
+		background-color:purple;
+	}
+	
+}
+
+
+.Meniu {
+  width: 200px; /* Set a width if you like */
+  margin:auto;
+  text-align: center;
+  font-family:Custom2;
+}
+
+.Meniu a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 15px; /* Add some padding */
+  text-decoration: none; 
+}
+
+.Meniu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+
+/* Dropdown Button */
+.buton {
+  font-family:Custom2;
+  background-color: #eee;
+  border: none;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  width: 200px;
+}
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.content a {
+  color: blue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .buton 
+{
+	background-color: blue;
+	animation:animatie1 5s infinite;
+}

@@ -1,0 +1,39 @@
+body
+{
+	
+	background-image:url("../Imagini/mozaic.png");
+	background-repeat: no-repeat;
+    background-attachment:  fixed;
+	background-size:  cover;
+	width:100%;
+	overflow-x:hidden;
+	margin:0 auto;
+	
+	
+}
+.fb
+{
+	background-color: white;
+}
+
+.li
+{
+	background-color: white;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  position:absolute;
+  top:2%;
+  right:3%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 5px;
+  padding: 10px;
+  font-size: 10px;
+}
